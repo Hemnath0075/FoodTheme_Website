@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headersection{
+    /* background-color: black; */
+}
+.navbar_items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logoimg{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+}
+.navbar_icons a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
