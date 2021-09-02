@@ -5,6 +5,7 @@
 }
 .headersection{
     /* background-color: black; */
+    border-bottom: 3px solid rgb(211, 233, 15); 
 }
 .navbar_items{
     display: flex;
@@ -13,12 +14,15 @@
 }
 .logoimg{
     background-color: white;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 .navbar_icons a{
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: black;
+    /* background-color: black; */
+    margin: 10px 20px;
+    padding: 10px 20px;
+    font-weight: 700;
 }
 
