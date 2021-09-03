@@ -25,4 +25,10 @@
     padding: 10px 20px;
     font-weight: 700;
 }
+.navbar_icons a::before{
+    border-bottom: none;
+}
+.navbar_icons a::after{
+    border-bottom: 3px solid black;
+}
 
