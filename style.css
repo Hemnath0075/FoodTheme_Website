@@ -3,30 +3,42 @@
   padding: 0;
   box-sizing: border-box;
 }
-html{
-    width: 100%;
+html {
+  width: 100%;
 }
-body{
-    min-width: 100%;
-    height: 100%;
+body {
+  min-width: 100%;
+  height: 100%;
 }
-main{
-    background: linear-gradient(to right top, #7f7fd5, #86a8e7, #91eae4); 
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main {
+  background: linear-gradient(to right top, #7f7fd5, #86a8e7, #91eae4);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.glass{
-    width: 90%;
-    height: 90%;
-    background: linear-gradient(to right top, rgba(255,255,255,0.7),rgba(255,255,255,0.1));
+.glass {
+  width: 95%;
+  height: 90%;
+  background: linear-gradient(
+    to right top,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.1)
+  );
+
+  overflow: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 .headersection {
-  /* background-color: black; */
-  /* background-color: white; */
   border-bottom: 3px solid rgb(211, 233, 15);
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 .navbar_items {
   display: flex;
@@ -34,32 +46,36 @@ main{
   justify-content: space-between;
 }
 .logoimg {
-  background-color: white;
   width: 60px;
   height: 60px;
 }
 .navbar_icons a {
   text-decoration: none;
   color: black;
-  /* background-color: black; */
   margin: 10px 20px;
   padding: 10px 20px;
   font-weight: 700;
 }
 
-#home {
+.home {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .heroimg {
-  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 .text h1 {
-  font-family: Verdana;
+  font-family: "Gill Sans";
   font-size: 2.5rem;
   text-transform: capitalize;
+}
+.text > .shadow {
+  text-shadow: 0px 0px 3px #ff0000;
+  padding-top: 10px;
+  margin-top: 30px;
 }
 .order_now {
   text-transform: uppercase;
@@ -80,26 +96,103 @@ main{
   transition: 0.5s;
   background-position: right center;
 }
-.navbar_icons a:hover{
-    border-bottom: 3px solid black;
+.navbar_icons a:hover {
+  border-bottom: 3px solid black;
+}
+.offersection {
+  margin-top: 30px;
+}
+.offers > .offerimg > img {
+  width: 400px;
+  height: 250px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.foods > .foodimg > img {
+  width: 400px;
+  height: 250px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.aboutus > .aboutusimg > img {
+  width: 400px;
+  height: 250px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
-/* this code can be changed later
-.navbar_icons a::before{
-    border-bottom: none;
+section {
+  border-bottom: 3px solid white;
 }
-.navbar_icons a::after{
-    border-bottom: 3px solid black;
-} */
+label {
+  text-transform: capitalize;
+}
+input{
+  width: 100%;
+}
+.footerarea{
+  text-align: center;
+  background-color: black;
+  
+}
+.footerarea > ul {
+  list-style: none;
+  
+}
+.footerli{
+  margin-bottom: 10px;
+}
+.footerli > a{
+  color: white;
+  text-decoration: none;
+}
 
+.glass::-webkit-scrollbar {
+  display: none;
+}
 
+.glass {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
+@media (max-width: 870px) {
+  .home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
-@media(max-width:760px){
-    #home {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
+    justify-content: flex-start;
+  }
+  .navbar_icons {
+    display: none;
+  }
+  .text h1 {
+    font-family: "Gill Sans";
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .text > .shadow {
+    text-shadow: 0px 0px 3px #ff0000;
+    padding-top: 10px;
+    margin-top: 30px;
+  }
+  .offers > .offerimg > img {
+    width: 320px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .foods > .foodimg > img {
+    width: 320px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  .aboutus > .aboutusimg > img {
+    width: 320px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
 }
