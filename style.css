@@ -72,9 +72,10 @@ main {
   font-family: "Gill Sans";
   font-size: 2.5rem;
   text-transform: capitalize;
+  color: white;
 }
 .text > .shadow {
-  text-shadow: 0px 0px 3px #ff0000;
+  text-shadow: 0px 0px 4px black;
   padding-top: 10px;
   margin-top: 30px;
 }
@@ -99,6 +100,10 @@ main {
 }
 .navbar_icons a:hover {
   border-bottom: 3px solid black;
+}
+.pricetag > img {
+  width: 20px;
+  height: 20px;
 }
 .offersection {
   margin-top: 30px;
@@ -133,28 +138,26 @@ label {
   text-transform: capitalize;
   font-weight: 600;
 }
-input{
+input {
   width: 100%;
 }
-.footerarea{
+.footerarea {
   text-align: center;
   background-color: white;
-  
 }
 .footerarea > ul {
   list-style: none;
-  
 }
-.footerli{
+.footerli {
   margin-bottom: 10px;
 }
-.footerli > img{
+.footerli > img {
   width: 20px;
   height: 20px;
   align-items: center;
   margin-right: 10px;
 }
-.footerli > a{
+.footerli > a {
   color: black;
   text-decoration: none;
 }
@@ -163,7 +166,7 @@ input{
   font-weight: 800;
   font-family: Helvetica;
 }
-.foodtitle > h1{
+.foodtitle > h1 {
   font-weight: 800;
   font-family: Helvetica;
 }
@@ -171,10 +174,9 @@ input{
   font-weight: 800;
   font-family: Helvetica;
 }
-fieldset{
+fieldset {
   border: 3px solid black;
 }
-
 
 .glass::-webkit-scrollbar {
   display: none;
@@ -184,7 +186,6 @@ fieldset{
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 
 @media (max-width: 870px) {
   .home {
