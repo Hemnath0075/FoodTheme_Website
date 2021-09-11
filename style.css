@@ -19,6 +19,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .glass {
   width: 95%;
@@ -57,7 +58,33 @@ main {
   padding: 10px 20px;
   font-weight: 700;
 }
-
+.hovermenu{
+  background-color: whitesmoke;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  z-index: 100;
+  display: none;
+}
+.menulist{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menulist > a {
+  /* padding-top: 15px; */
+  margin-top: 15px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.menulist > a:hover{
+  background-color: rgb(179, 179, 179);
+}
 .home {
   display: flex;
   align-items: center;
